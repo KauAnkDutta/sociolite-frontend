@@ -10,6 +10,7 @@ import { MdOutlineNotificationsNone } from "react-icons/md";
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import InboxItems from "./InboxItems";
+import logo from '../images/logo.png';
 
 export default function Navbar() {
   const { user, notifications } = useContext(AuthContext);
@@ -26,7 +27,7 @@ export default function Navbar() {
     <div className="navbar">
       <div className="left">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <img src={'../images/logo.png'} alt="logo" className="logo" />
+          <img src={logo} alt="logo" className="logo" />
         </Link>
 
         <div className="left-icons">

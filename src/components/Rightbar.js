@@ -7,7 +7,7 @@ import { useNavigate, NavLink } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import { Add, Remove, Chat } from "@material-ui/icons";
 import {get_friends_suggestion} from '../apiCalls';
-import {toast} from 'react-toastify';
+import gift from '../images/gift.png';
 
 function Rightbar({ username }) {
   const [friends, setFriends] = useState([]);
@@ -141,7 +141,7 @@ function Rightbar({ username }) {
     return (
       <>
         <div className="rightbar_birthday_container">
-          <img src={"../images/gift.png"} className="gift_icon" alt="gift-img" />
+          <img src={gift} className="gift_icon" alt="gift-img" />
           <span className="birthday_text">
             <b>Jack Morestan</b> and <b>2 other friends</b> have a birthday
             today.
