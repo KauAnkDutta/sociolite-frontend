@@ -1,0 +1,40 @@
+.rightbar_online_friends{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.online_frnd_img_container{
+    margin-right: 10px;
+    position: relative;
+}
+
+.online_user_pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.online{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(14, 111, 14);
+    position: absolute;
+    border: 2px solid white;
+    right: 0;
+    top: -2px
+}
+
+.online_user{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(39, 35, 35);
+}
+
+@media screen and (max-width: 780px){
+    .online_user{
+        display: none;
+    }
+}

@@ -1,0 +1,165 @@
+.topbarContainer{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(87, 87, 208);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.topbar_left{
+    flex: 3;
+}
+
+.logo{
+    font-size: 24px;
+    margin-left: 15px;
+    font-weight: bold;
+    color: rgb(245, 239, 239);
+    cursor: pointer;
+}
+
+.topbar_center{
+    flex: 5;
+}
+
+.search_bar_container{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.search_bar_container > i{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.search_input{
+    border: none;
+    width: 70%;
+    margin-left: 5px;
+}
+
+.search_input:focus{
+    outline: none
+}
+
+/* Top bar links */
+
+.topbar_right{
+    flex: 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.topbar_link{
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.chat_icon:visited, .chat_icon:link{
+    color: white;
+}
+
+.topbar_link_icon{
+    display: none;
+}
+
+.topbar_icons_container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.topbar_icon{
+    margin-right: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    position: relative;
+    font-size: 12px;
+}
+
+.icon_badge{
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(165, 60, 60);
+    text-align: center;
+    border-radius: 50%;
+    width: auto;
+    min-width: 18px;
+    white-space: nowrap;
+    padding: 0px 2px;
+    top: -8px;
+    right: -12px;
+    justify-content: center;
+    font-size: 12;
+
+}
+
+.badge{
+    display: none;
+}
+
+.topbar_img{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -3px;
+}
+
+/* Notification box */
+
+.notification_box{
+    visibility: hidden;
+    position: absolute;
+    right: 35px;
+    top: 50px;
+    z-index: 3;
+    background-color: whitesmoke;
+    padding: 5px 5px;
+    width: 250px;
+    max-height: auto;
+    border: 1px solid rgb(129, 166, 229);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+}
+
+.notification_box::after{
+    content: "";
+    position: sticky;
+    bottom: 100%;
+    left: 89.5%;
+    margin-top: -36px;
+    margin-left: 85px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent rgb(214, 227, 245);
+}
+
+.no_notification{
+    color: rgb(141, 134, 134);
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.display_menu{
+    visibility: visible;
+}

@@ -1,0 +1,26 @@
+.sidebar_friend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+ 
+.sidebar_friend_img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebar_friend:hover{
+    background-color: rgb(179, 178, 178);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 780px){
+    .sidebar_friend_name{
+        display: none;
+    }
+}

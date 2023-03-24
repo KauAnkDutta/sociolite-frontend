@@ -1,0 +1,124 @@
+.share {
+    width: 100%;
+    /* height: 170px; */
+    border-radius: 5px;
+    box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.69);
+    -webkit-box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.69);
+    padding: 5px;
+    background: rgb(245, 241, 241);
+}
+
+.share_container {
+    padding: 10px;
+}
+
+.share_top {
+    display: flex;
+    align-items: center;
+}
+
+.share_profile_pic {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.share_input {
+    height: 30px;
+    width: 80%;
+    border: none;
+    margin-left: 10px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.share_input:focus {
+    outline: none;
+}
+
+.share_hr {
+    margin: 20px;
+    color: whitesmoke;
+}
+
+.share_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.share_options {
+    display: flex;
+    margin-left: 20px;
+}
+
+.share_option {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.share_icon {
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+.share_icon_text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.share_btn {
+    margin-right: 20px;
+    width: 60px;
+    font-weight: 500;
+    border: none;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    padding: 7px;
+    color: whitesmoke;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.share_btn:hover {
+    background-color: rgb(22, 139, 22);
+    transition: transform 0.2s ease-in;
+    transform: scale(1.15);
+}
+
+.share_Img_Container {
+    padding: 0 20px 10px 20px;
+    position: relative;
+}
+
+.share_Img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.share_Cancel_Img {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.share_Cancel_Img:hover {
+    transition: transform 0.1s ease-in;
+    transform: scale(1.15);
+}
+
+@media screen and (max-width: 700px) {
+    .share {
+        width: 90%;
+    }
+}

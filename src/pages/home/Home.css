@@ -1,0 +1,37 @@
+.homeContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: rgb(200, 197, 197);
+}
+
+
+.sidebar-enter {
+    opacity: 0;
+}
+
+.sidebar-enter-active {
+    opacity: 1;
+    transition: opacity 800ms;
+}
+
+
+.feed-enter{
+    opacity: 0;
+}
+
+.feed-enter-active{
+    opacity: 1;
+    transition: opacity 800ms;
+}
+
+
+.rightbar-enter{
+    opacity: 0;
+}
+
+.rightbar-enter-active{
+    opacity: 1;
+    transition: opacity 800ms;
+} 
+

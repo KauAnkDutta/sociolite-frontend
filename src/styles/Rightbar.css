@@ -1,0 +1,194 @@
+.rightBar {
+    flex: 3.5;
+    background: rgb(245, 241, 241);
+}
+
+.rightbar_wrapper {
+    padding: 20px;
+}
+
+.rightbar_birthday_container {
+    display: flex;
+    align-items: center;
+}
+
+.gift_icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.birthday_text {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.rightbar_ad_img {
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 21px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 21px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 21px -3px rgba(0, 0, 0, 0.75);
+}
+
+.rightbat_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.rightbar_friends_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.rightbar_online_friends {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.online_frnd_img_container {
+    margin-right: 10px;
+    position: relative;
+}
+
+.online_user_pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.online {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(14, 111, 14);
+    position: absolute;
+    border: 2px solid white;
+    right: 0;
+    top: -2px
+}
+
+.online_user {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(39, 35, 35);
+}
+
+.rightbar_title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.rightbar_info_item {
+    margin-bottom: 5px;
+}
+
+.rightbar_info_key {
+    font-weight: 500;
+    margin-right: 10px;
+    color: rgb(78, 75, 75);
+}
+
+.rightbar_info_value {
+    font-weight: 300;
+}
+
+.rightbar_followings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rightbar_following {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.rightbar_following_name {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.rightbar_following_img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.right_follow_button {
+    margin-top: 30px;
+    border: none;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.right_follow_button:hover {
+    background-color: rgb(114, 114, 174);
+}
+
+.follow_btn {
+    margin-left: 3px;
+}
+
+.logout_btn {
+    margin-top: 30px;
+    background: rgb(162, 75, 153);
+    background: linear-gradient(144deg, rgba(162, 75, 153, 1) 27%, rgba(0, 116, 255, 1) 74%);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.chat_btn_container {
+    cursor: pointer;
+    text-align: center;
+    padding: 8px;
+    width: 8%;
+}
+
+.chatIcon {
+    color: rgb(87, 87, 208);
+    margin-bottom: -2px;
+}
+
+.chatIcon:hover {
+    transition: transform 0.2s ease-in;
+    transform: scale(1.15);
+}
+
+@media screen and (max-width: 780px) {
+    .rightbar_birthday_container {
+        display: none;
+    }
+
+    .rightbar_ad_img {
+        display: none;
+    }
+}

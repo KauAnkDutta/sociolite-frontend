@@ -1,0 +1,82 @@
+.login {
+    height: 100vh;
+    background-color: rgb(207, 179, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    width: 50%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.login-left {
+    flex: 1;
+    background: linear-gradient(rgba(88, 87, 89, 0.5), rgba(50, 48, 53, 0.5)),
+        url("https://images.pexels.com/photos/697244/pexels-photo-697244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+
+.reg-link {
+    width: 100%;
+}
+
+.login-register-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: rebeccapurple;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+
+.login-right {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* justify-content: center; */
+    align-items: flex-start;
+}
+
+.login-head {
+    color: #555;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.login-input {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 10px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #938eef;
+    color: white;
+    font-weight: bold;
+    cursor: pointer
+}

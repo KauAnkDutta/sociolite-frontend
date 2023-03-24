@@ -1,0 +1,114 @@
+.register {
+    height: 100vh;
+    background-color: rgb(193, 190, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-card {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.register_left {
+    flex: 1;
+    background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+        url("https://images.pexels.com/photos/697244/pexels-photo-697244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+}
+
+.register_desc{
+    text-align: center;
+}
+
+.reg-txt {
+    font-size: 14px;
+}
+
+.register_register_button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: rebeccapurple;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.register_right {
+    flex: 1;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.register-heading {
+    color: #555;
+}
+
+.register_form_box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.register_input_container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.register_input {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 10px;
+    outline: none;
+}
+
+.register_button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #938eef;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.error-msg{
+    color: rgba(244, 21, 21, 0.853);
+    font-size: 12px;
+    font-weight: 500;
+    display: none;
+    margin-top: 10px;
+
+}
+
+.register_input:invalid[focused="true"] ~ .error-msg{
+    display: block;
+}
+
+.register_input:invalid[focused="true"]{
+    border-bottom: 3px solid rgb(231, 95, 95);
+}
+
+.register_input:valid[focused="true"]{
+    border-bottom: 3px solid lightgreen;
+}

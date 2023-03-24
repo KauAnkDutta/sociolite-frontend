@@ -1,0 +1,118 @@
+.messenger{
+    height: calc(100vh - 70px);
+    display: flex;
+    background: rgb(245, 241, 241);
+}
+
+.chat_menu{
+    flex: 3.5;
+}
+
+.chat_menu_input{
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid rgb(101, 100, 100);
+    padding: 5px 5px;
+    background: rgb(155, 152, 152);
+    color: white;
+    outline: none;
+    font-size: 18px;
+}
+
+.chat_menu_input::placeholder{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.chat_box{
+    flex: 5.5;
+}
+
+.chat_box_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.chat_box_top{
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+.chat_box_top::-webkit-scrollbar{
+    width: 5px;
+}
+
+.chat_box_top::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+
+.chat_box_top::-webkit-scrollbar-thumb{
+    background-color: rgb(179, 179, 179);
+}
+
+.chat_box_bottom{
+    position: relative;
+    margin-top:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ! typing animation */
+.lottie_annimation{
+    position: absolute;
+    right: 90px;
+    bottom: -20px;
+}
+
+
+.chat_message_input{
+    width: 80%;
+    height: 90px;
+    padding: 10px;
+    background-color: rgb(229, 233, 234);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    background: rgb(197, 195, 195);
+    font-size: 17px;
+}
+
+.chat_message_input:focus{
+    outline: 1px solid rgb(114, 169, 114);
+}
+
+.chat_submit_button{
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(62, 124, 124);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.chat_online{
+    flex: 3;
+}
+
+.chat_menu_wrapper,.chat_box_wrapper,.chat_online_wrapper{
+    padding: 10px;
+    height: 100%;
+}
+
+.no_conversation_text{
+    position: absolute;
+    top: 40%;
+    font-size: 50px;
+    color: rgb(150, 148, 148);
+    text-align: center;
+    cursor: pointer;
+}
